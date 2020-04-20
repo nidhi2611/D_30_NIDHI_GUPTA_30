@@ -20,7 +20,12 @@ public class CalculateDuplicate {
 
     }
 
-    public void duplicate() {
-
+    public int duplicate(int array[], int element) {
+        int counter = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == element)
+                ++counter;
+        }
+        return counter;
     }
 }
