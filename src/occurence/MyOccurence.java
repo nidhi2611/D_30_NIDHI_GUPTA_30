@@ -15,4 +15,7 @@ public class MyOccurence {
             return false;
     }
 
+    public static void main(String args[]) {
+
+    }
 }
