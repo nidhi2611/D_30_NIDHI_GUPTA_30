@@ -1,5 +1,7 @@
 package occurence;
 
+import java.util.Scanner;
+
 public class MyOccurence {
     public static boolean occurence(int arr[], int element) {
         int counter = 0;
@@ -16,6 +18,7 @@ public class MyOccurence {
     }
 
     public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
 
     }
 }
