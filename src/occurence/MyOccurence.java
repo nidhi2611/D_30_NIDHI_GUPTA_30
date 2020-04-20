@@ -11,6 +11,8 @@ public class MyOccurence {
                 ++counter;
             }
         }
+        if (counter == 0)
+            System.out.println("Element not Found");
     }
 
     public static void main(String args[]) {
