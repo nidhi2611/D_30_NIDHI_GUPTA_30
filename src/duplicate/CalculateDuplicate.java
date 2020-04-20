@@ -1,6 +1,7 @@
 package duplicate;
 
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class CalculateDuplicate {
@@ -17,10 +18,15 @@ public class CalculateDuplicate {
         for (int k = 0; k < n; k++) {
             set.add(arr[k]);
         }
-
+        LinkedList list = new LinkedList(set);
+        for (int l = 0; l < list.size(); l++) {
+            int val = ((Integer) list.get(l)).intValue();
+            if (duplicate(arr, val) > 1)
+                System.out.println("Occurence of " + val + " is " + duplicate(arr, val));
+        }
     }
 
-    public int duplicate(int array[], int element) {
+    public static int duplicate(int array[], int element) {
         int counter = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == element)
